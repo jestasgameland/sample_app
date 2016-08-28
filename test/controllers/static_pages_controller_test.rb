@@ -10,7 +10,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get static_pages_home_url
     assert_response :success
-    assert_select "title", "Home | #{@base_title}"  # checks for the existance of a "title" selector (tag) in the HTML, with the contents in quotes
+    assert_select "title", "Ruby on Rails Tutorial Sample App"  # checks for the existance of a "title" selector (tag) in the HTML, with the contents in quotes
   end
 
   test "should get help" do
